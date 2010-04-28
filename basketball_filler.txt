@@ -1,0 +1,6 @@
+SLOT1 Referee
+SLOT2 making the fouls
+SLOT3 those rules
+SLOT4 a technical
+SLOT5 go swish in the net with the basket-Ball
+SLOT6 rearranged the defense
