@@ -18,8 +18,7 @@
 #       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #       MA 02110-1301, USA.
 
-
-from termcolor import colored
+from termcolor.termcolor import colored
 from optparse import OptionParser
 import re
 
