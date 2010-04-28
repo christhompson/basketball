@@ -1,0 +1,73 @@
+basketball
+by Chris Thompson
+http://blog.stipes.org/basketball
+http://github.com/christhompson/basketball
+
+a simple joke "choose your own" adventure game
+(where you have no choice)
+(and not really an illusion of choice either)
+
+Copyright 2010 Chris Thompson (chris@stipes.org)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+    MA 02110-1301, USA.
+
+---------------------
+ : HOW TO USE/PLAY :
+---------------------
+First of all, have fun with it. There isn't much here, so this is an
+important first step.
+
+- To play an adventure (a template and a filler file)
+
+> python basketball.py template_file filler_file
+
+- To build an adventure on a template
+
+> python basketball.py -n template_file filler_filename
+or
+> python basketball.py --new template_file filler_filename
+
+Where the template_file is an existing template, and the filler_filename
+is a new filler_file you want the program to create.
+
+basketball will run through the template and prompt you for what you
+want to have fill each slot. It will then save these in the proper
+format in the filler_file.
+
+Template files are just text files of the form (without tabs)
+
+	SEGMENT1
+
+	SEGMENT2
+
+etc.
+
+Each segment is presented to the player and then the player is prompted
+for input. Within each segment, there is text and slots
+
+	You are running through the SLOT1 looking for the SLOT2.
+
+The SLOTS are replaced with the filler content.
+
+----------------------
+ : ACKNOWLEDGEMENTS :
+----------------------
+
+This uses the termcolor library (http://pypi.python.org/pypi/termcolor),
+which is pretty cool (although I couldn't get blinking to work :( ).
+
+Thanks for Josh Hickman for basically coming up with the initial idea,
+and sitting around while I wrote some janky Python.

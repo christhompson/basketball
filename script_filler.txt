@@ -1,0 +1,6 @@
+SLOT1 the Wizard
+SLOT2 eating a goat
+SLOT3 slot three
+SLOT4 illegal self-reference
+SLOT5 be a jerk
+SLOT6 rearranged the furniture

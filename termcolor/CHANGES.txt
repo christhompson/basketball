@@ -1,0 +1,18 @@
+0.1.2 (04.06.2009)
+==================
+
+- Fixed bold characters. (Thanks Tibor Fekete)
+
+0.1.1 (05.03.2009)
+==================
+
+- Some refactoring.
+- Updated copyright.
+- Fixed reset colors.
+- Updated documentation.
+
+0.1 (09.06.2008)
+================
+
+- Initial release.
+

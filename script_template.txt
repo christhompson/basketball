@@ -1,0 +1,5 @@
+How are you today, asked SLOT1. You shouldn't be SLOT2!
+
+Don't ask any questions about SLOT3. That's SLOT4.
+
+Well, I guess you could SLOT5 if you really SLOT6.
