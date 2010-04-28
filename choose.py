@@ -1,7 +1,7 @@
 import basketball
 
-adventureSets = {"sci-fi": "sci-fi_filler.txt", "adventure": "adventure_filler.txt", "basketball": "basketball_filler.txt"}
-colorSets = {"sci-fi": "green", "adventure": "cyan", "basketball": "red"}
+adventureSets = {"sci-fi": "sci-fi_filler.txt", "adventure": "adventure_filler.txt", "basketball": "basketball_filler.txt", "romantic comedy": "romantic-comedy_filler.txt"}
+colorSets = {"sci-fi": "green", "adventure": "cyan", "basketball": "red", "romantic comedy": "magenta"}
 
 def chooseAdventure(templateFile, adventureSet, colorSet):
 	choice = ""

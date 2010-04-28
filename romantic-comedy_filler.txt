@@ -1,0 +1,6 @@
+SLOT1 The pretty lady
+SLOT2 spilling the soup on the lady
+SLOT3 how to say smart things
+SLOT4 a faux-pas
+SLOT5 make the lady-kisses
+SLOT6 rearranged the subplot
