@@ -1,0 +1,6 @@
+SLOT1 broadswords
+SLOT2 heroism
+SLOT3 dragons
+SLOT4 save the damsel
+SLOT5 go swish with the sword
+SLOT6 rearranged the dungeon

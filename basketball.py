@@ -18,25 +18,24 @@
 #       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #       MA 02110-1301, USA.
 
+
 from termcolor.termcolor import colored
 from optparse import OptionParser
 import re
 
-def main():
+def main(COLOR="red", CommandLine=True, filler_file="", template_file=""):
+	if CommandLine:
+		usage = "usage: %prog [options] template_file filler_file"
+		parser = OptionParser(usage=usage)
+		parser.add_option("-n","--new", dest="new", action="store_true",
+			default=False, help="Create a new filler file")
+		(options, args) = parser.parse_args()
+		if len(args) != 2:
+			parser.error("bad arguments")
+		template_file = args[0]
+		filler_file = args[1]
 	
-	COLOR = "red"
-	
-	usage = "usage: %prog [options] template_file filler_file"
-	parser = OptionParser(usage=usage)
-	parser.add_option("-n","--new", dest="new", action="store_true",
-						default=False, help="Create a new filler file")
-	(options, args) = parser.parse_args()
-	if len(args) != 2:
-		parser.error("bad arguments")
-	template_file = args[0]
-	filler_file = args[1]
-	
-	if options.new:
+	if CommandLine and options.new:
 		with open(template_file) as template_f:
 			with open(filler_file, 'w') as filler_f:
 				script_text = template_f.read()
@@ -48,7 +47,6 @@ def main():
 						lol = raw_input(slot + " > ") # actual input :)
 						filler_f.write(slot + " " + lol + "\n")
 				print "COMPLETE"
-	
 	else:
 		with open(template_file) as template_f:
 			with open(filler_file) as filler_f:
@@ -58,7 +56,7 @@ def main():
 					if line == "": continue
 					split_line = line.split(" ")
 					script_text = script_text.replace( split_line[0],
-										 colored(" ".join(split_line[1:]).strip().upper(), COLOR ) )
+									 colored(" ".join(split_line[1:]).strip().upper(), COLOR ) )
 				segments = script_text.split("\n\n")
 				for segment in segments:
 					print segment

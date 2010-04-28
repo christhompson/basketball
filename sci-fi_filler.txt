@@ -1,0 +1,6 @@
+SLOT1 rollerball
+SLOT2 LASER
+SLOT3 enter the matrix
+SLOT4 aliens
+SLOT5 ray-gun
+SLOT6 rearranged the future
